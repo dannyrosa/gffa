@@ -162,7 +162,7 @@ class Starships(models.Model):
 class Vehicles(models.Model):
     """ A vehicle, i.e. Snowspeeder. """
 
-    vehicles_id = models.AutoField(primary_key=True)
+    vehicle_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=40)
     vehicle_class = models.CharField(max_length=40, blank=True, null=True)
     manufacturer = models.CharField(max_length=40, blank=True, null=True)
